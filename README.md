@@ -17,6 +17,8 @@
 <br>
 <h2>1. A brief intro to the basic building blocks of Websites</h2>
 HTML stands for Hyper Text Markup Language and CSS stands for Cascading Style Sheet. These are the building blocks of all websites around the world.<br>
+<br>
+<img src="/README/inspect.png"><br>
 Right click on any website page and click on "Inspect". You will see a window on the side of the page. That is content of the page. The computer takes that chunk of text and converts it into the nice pages you see today. HTML produces the content, while CSS helps style the website to make it look nice and colourful. In this workshop we will not be writing any HTML or CSS, but it is necessary for us to understand how the website looks like under the hood to be able to webscrape.
 <br>
 <h2>2. How to import packages to your project</h2>
