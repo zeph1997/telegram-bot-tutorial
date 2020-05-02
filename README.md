@@ -26,6 +26,7 @@ In this workshop we will not be writing any HTML or CSS, but it is necessary for
 <h2>2. How to import packages to your project</h2>
 Download this repository and open up the <code>main.py</code> file using VS Code or any IDE of your preference.<br>
 You will see <code>import</code> on the first two lines. We will have to utilise some packages (which are code other people wrote) to help us connect to Telegram. In order to get the package to connect to Telegram, we need to use the command prompt.<br>
+<br>
 <b>Follow these steps to install pyTelegramBotAPI and BeautifulSoup:</b><br>
 &emsp;<b>Step 1:</b> Go to the search bar and type <code>cmd</code> <br>
 &emsp;<b>Step 2:</b> Click on command prompt <br>
@@ -36,4 +37,14 @@ You will see <code>import</code> on the first two lines. We will have to utilise
 <br>
 Now you have all the tools to start building your own webscraping bot!
 <br>
-<h2>How to connect to Telegram</h2>
+<h2>3. How to connect to Telegram</h2>
+Time for us to create a bot! Go into Telegram and search for <code>BotFather</code><br>
+<br>
+Tap "START" and type <code>/newbot</code> to create your own bot. Follow the instructions to give your bot any name you like. Once you've given the bot a name and username, BotFather will give you an API Token. <br>
+<img src="/README/apikey.png"><br>
+<b>Please do not share this token as anyone with it will be able to control your bot!<b><br>
+<br>
+Copy the API Token and go back to <code>main.py</code>. Paste the API Token in line 5, inside the inverted commas. Make sure that the API Token has the inverted commas before and after it.<br>
+<br>
+Now your bot is connected to Telegram!<br>
+<h2>4. How to Webscrape</h2>
