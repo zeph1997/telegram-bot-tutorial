@@ -42,7 +42,7 @@ Time for us to create a bot! Go into Telegram and search for <code>BotFather</co
 <br>
 Tap "START" and type <code>/newbot</code> to create your own bot. Follow the instructions to give your bot any name you like. Once you've given the bot a name and username, BotFather will give you an API Token. <br>
 <img src="/README/apikey.png"><br>
-<b>Please do not share this token as anyone with it will be able to control your bot!<b><br>
+<b>Please do not share this token as anyone with it will be able to control your bot!</b><br>
 <br>
 Copy the API Token and go back to <code>main.py</code>. Paste the API Token in line 5, inside the inverted commas. Make sure that the API Token has the inverted commas before and after it.<br>
 <br>
