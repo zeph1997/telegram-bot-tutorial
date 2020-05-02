@@ -14,7 +14,7 @@ def start_message(message):
 @bot.message_handler(commands=["add"])
 def add_stocks(message):
     stockToAdd = message.text.strip().split()
-    validityCheck = requests.get(f"https://sg.finance.yahoo.com/quote/{stockToAdd[1]}/", allow_redirects=False)
+    validityCheck = requests.get(f"", allow_redirects=False)
     if validityCheck.status_code == 200:
         stocks.append(stockToAdd[1])
         bot.send_message(message.chat.id,f"{stockToAdd[1]} added to list")
@@ -28,11 +28,11 @@ def get_price(message):
     stocks = []
     bot.send_message(message.chat.id,"Getting prices...")
     for stock in stocks:
-        url = f"https://sg.finance.yahoo.com/quote/{i}/"
+        url = f""
         response = requests.get(url)
         soup = BeautifulSoup(response.content, "html.parser")
-        price = soup.select("span[data-reactid*='14']")[0].text.strip()
-        timing = soup.select("span[data-reactid*='18']")[0].text.strip()
+        price = soup.select("")[0].text.strip()
+        timing = soup.select("")[0].text.strip()
         message += f"Price of {i} \n${price}, {timing} \n"
     bot.send_message(message.chat.id,output_message)
 
