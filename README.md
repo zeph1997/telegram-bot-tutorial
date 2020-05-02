@@ -48,3 +48,17 @@ Copy the API Token and go back to <code>main.py</code>. Paste the API Token in l
 <br>
 Now your bot is connected to Telegram!<br>
 <h2>4. How to Webscrape</h2>
+As mentioned in the first section, the content on the websites are mostly in HTML. As such, we can find the target elements and extract the specific information. Lucky for us, we have BeautifulSoup to help us with that. BeautifulSoup can isolate elements in the page will make it easier for us to extract a certain piece of information on the website (e.g. the text of the price of an item on the website.<br>
+<h2>5. How to respond to user input on Telegram</h2>
+To reply to a message, we have to include a message handler. You can see these on line 10, 14, and 25. They will handle the responses of the specified user input. Let us use line 10 as an example. You can see that <code>commands=["start"]</code> is within the brackets of the message handler. This means that the following code underneath the message handler will be executed when the user types <code>/start</code><br>
+<br>
+As mentioned above, the message handlers are always followed with a function (e.g. line 11). They usually start with the word <code>def</code> followed by the name of the function and a variable as a parameter. The name of the function can be any name decided by you. The parameter refers to the message sent by the user. You can extract useful information such as the chat ID of the user (to be used to reply to them) or even the whole text of the message. Take note that any command messages have to be preceeded with a <code>/</code><br>
+<br>
+To reply to a specific user, use the <code>.send_message</code> function (as seen on line 12). The required arugement is the user chat id, which can be retrieved from the parameter as mentioned in the paragraph above. Use <code>message.chat.id</code> to get the chat ID. For those who are interested, the message information retrieved as a parameter for the function is a dictionary, which allows it to store mutliple data as long as we know how to access them. You can always <code>print()</code> the variable to be able to see the contents in greater detail (which will be useful for debuggin).<br>
+<br>
+After putting the chat ID of the user to reply, add a comma <code>,</code> and start typing the message that you would like to send to the user. Do remember that the message will have to be a string data type so you have to enclose your text in inverted commas.<br>
+<br>
+Now add <code>bot.polling</code> way below your code (as seen on line 39) to get the bot to listen on Telegram. <b>Make sure it is at the end of all the code as the bot will not read the code after the polling function is called.</b><br>
+<br>
+<h2>Well Done!</h2>
+Andddd..... you're all set! Now just right click on the IDE and click <code>Run Python File in Terminal</code> and you can start using your bot! Do note that the file has to be running in the terminal in order for the bot to be live. To shut down the bot, you can use CTRL+C in the terminal. Congratulations on creating your first bot! 
