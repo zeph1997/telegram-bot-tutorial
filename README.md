@@ -62,3 +62,8 @@ Now add <code>bot.polling</code> way below your code (as seen on line 39) to get
 <br>
 <h2>Well Done!</h2>
 Andddd..... you're all set! Now just right click on the IDE and click <code>Run Python File in Terminal</code> and you can start using your bot! Do note that the file has to be running in the terminal in order for the bot to be live. To shut down the bot, you can use CTRL+C in the terminal. Congratulations on creating your first bot! 
+
+<h2>Additional Resources for Further Learning</h2>
+If you want to learn more about HTML, click <a href="https://www.w3schools.com/html/default.asp">here</a>. If you would like to learn more about Python, click <a href="https://www.w3schools.com/python/">here</a>. Both resources are by W3 School. They have great resources for you to learn!<br>
+<br>
+All the best on your development journey!
