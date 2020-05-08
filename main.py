@@ -9,12 +9,13 @@ stocks = []
 
 @bot.message_handler(commands=["start"])
 def start_message(message):
-    bot.send_message(message.chat.id,"Start command was activated")
+    #add a reply to the user here
 
 @bot.message_handler(commands=["add"])
 def add_stocks(message):
     stockToAdd = message.text.strip().split()
-    validityCheck = requests.get(f"", allow_redirects=False)
+    #the line below checks the website to see if the stock exists. If it exists, then we will add it into a list for them. If not, we will tell the user that the code is invalid. 
+    validityCheck = requests.get(f"", allow_redirects=False)    #add website URL here
     if validityCheck.status_code == 200:
         stocks.append(stockToAdd[1])
         bot.send_message(message.chat.id,f"{stockToAdd[1]} added to list")
@@ -28,11 +29,11 @@ def get_price(message):
     stocks = []
     bot.send_message(message.chat.id,"Getting prices...")
     for stock in stocks:
-        url = f""
+        url = f""       #add website URL here
         response = requests.get(url)
         soup = BeautifulSoup(response.content, "html.parser")
-        price = soup.select("")[0].text.strip()
-        timing = soup.select("")[0].text.strip()
+        price = soup.select("")[0].text.strip()     #add the element that contains the stock price here
+        timing = soup.select("")[0].text.strip()    #add the element that contains the time here
         message += f"Price of {i} \n${price}, {timing} \n"
     bot.send_message(message.chat.id,output_message)
 
