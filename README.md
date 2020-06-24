@@ -13,6 +13,7 @@
 <ol>
   <li>Python installed (minimum python 3). Please click <a href="https://www.python.org/downloads/">here</a> if you have not done so</li>
   <li>An IDE. Any IDE is fine, but preferably VS Code so it will be easier to follow. Please click <a href="https://code.visualstudio.com/">here</a> if you wish to download VS Code.</li>
+  <li>A Telegram Account</li>
 </ol>
 <br>
 <h2>1. A brief intro to the basic building blocks of Websites</h2>
