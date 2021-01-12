@@ -33,7 +33,7 @@ def get_price(message):
         soup = BeautifulSoup(response.content, "html.parser")
         price = soup.select("")[0].text.strip()     #add the element that contains the stock price here
         timing = soup.select("")[0].text.strip()    #add the element that contains the time here
-        output_message += f"Price of {i} \n${price}, {timing} \n"
+        output_message += f"Price of {stock} \n${price}, {timing} \n"
     bot.send_message(message.chat.id,output_message)
 
 bot.polling()
