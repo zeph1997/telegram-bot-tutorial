@@ -44,10 +44,6 @@ print(my_integer)
 # for j in my_list:
 #     print(j)
 
-## While loop
-# while True == True:
-#     print("Hello")
-
 
 ## Functions
 # def function_name(num1,num2,num3):
